@@ -1,0 +1,49 @@
+{% extends 'hello/layout.html' %}
+
+{% block body %}
+    <a href="{% url 'index' %}" class="back">Back</a>
+    <div class="container">
+        <div class="card">
+            <img src="https://d2s30hray1l0uq.cloudfront.net/frontend/shoe-photography-featured-image.jpg" alt="">
+            
+        </div>
+        
+        <div class="rating">
+            <div class="star-pack">
+                <p>4.9</p>
+                <div class="star">
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+            </div>
+            
+            <div class="progress">
+                <span>
+                    <label for="file">5</label>
+                    <progress id="file" value="20%"></progress>
+                </span>
+                <span>
+                    <label for="file">4</label>
+                    <progress id="file" value="20%"></progress>
+                </span>
+                <span>
+                    <label for="file">3</label>
+                    <progress id="file" value="20%"></progress>
+                </span>
+                <span>
+                    <label for="file">2</label>
+                    <progress id="file" value="20%"></progress>
+                </span>
+                <span>
+                    <label for="file">1</label>
+                    <progress id="file" value="20%"></progress>
+                </span>
+                
+            </div>
+        </div>
+    </div>
+
+{% endblock %}
